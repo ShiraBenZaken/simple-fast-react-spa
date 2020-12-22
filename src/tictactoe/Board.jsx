@@ -8,7 +8,7 @@ export default class Board extends Component{
         onClick={()=>this.props.onClick(i)} />
     }
 
-
+//the board...
     render(){
     return(
         <div>

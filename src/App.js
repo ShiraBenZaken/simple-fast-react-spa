@@ -8,6 +8,7 @@ import Game from "./tictactoe/Game"
 function App() {
 
   return (
+    //router..
   <HashRouter>
       <div>
       <h1>Simple Fast SPA</h1>

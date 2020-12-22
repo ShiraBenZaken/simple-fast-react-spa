@@ -4,6 +4,7 @@ import './styles.css';
 
 
 function winnerYay(squares){
+//the win options
     const lines=[
         [0,1,2],
         [3,4,5],
@@ -14,6 +15,7 @@ function winnerYay(squares){
         [0,4,8],
         [2,4,6],
     ]
+    //check if win
     for (let index = 0; index < lines.length; index++) {
         const [a,b,c] = lines[index];
         if(squares[a] && squares[a]===squares[b] && squares[b]===squares[c]){
@@ -44,7 +46,7 @@ export default class Game extends Component{
             xIsNext:(step%2)===0
         })
     }
-
+    //when click on button x or o
     handleClick(i){
         const history= this.state.history.slice(0,this.state.stepNumber+1);
         const current=history[history.length-1];
@@ -53,6 +55,7 @@ export default class Game extends Component{
         if(winner || squares[i]){
             return;
         }
+        //check state
         squares[i]=this.state.xIsNext?'x':'o';
         this.setState({
            history:history.concat({
@@ -72,9 +75,9 @@ export default class Game extends Component{
         const move=history.map((stap,move)=>{
             const desc=move? 'go to #'+move:'start the game';
             return(
+                //jump to option
                 <li key={move}>
                     <button className="xx" onClick={()=>{this.jumpTo(move)}}>{desc}</button>
-
                 </li>
             )
         }); 

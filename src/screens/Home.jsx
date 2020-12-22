@@ -3,6 +3,7 @@ import Button from "../components/Button";
 import Post from "../screens/Post";
 
 function Home (){
+    //for opening the post..
     const [showHidePost, setshowHidePost] = React.useState(false)
 
     const onClick1 = () => setshowHidePost(!showHidePost)
