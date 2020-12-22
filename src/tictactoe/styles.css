@@ -20,7 +20,9 @@
       border: 1px solid #2d6898;
    }
    
-  
+  .border-row{
+      display: flex;
+  }
  
  /* Board */
  .board-row:after {
@@ -30,14 +32,11 @@
    }
    /* Game */
   .game {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;  
-   }
+    background: black;
+    justify-content: center;
+    display:flex;
+    color: white;
+}
    /* Game Info */
   ul {
     padding-left: 30px;
@@ -47,4 +46,10 @@
    }
    .status {
     margin-bottom: 10px;
+   }
+
+   .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
    }
