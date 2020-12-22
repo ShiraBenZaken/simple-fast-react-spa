@@ -5,7 +5,7 @@ function Contact (){
       <div>
         <h2>GOT QUESTIONS?</h2>
         <p>u can come to my linkedIn profile :)
-           <a href="https://www.linkedin.com/shira-ben-zaken/"> shira ben zaken</a>.
+           <a href="https://www.linkedin.com/in/shira-ben-zaken/"> shira ben zaken</a>.
         </p>
       </div>
     );
