@@ -1,23 +1,19 @@
 
 .Square {
-    background: #fff;
+    background: transparent;
     border: 1px solid #999;
     font-size: 50px;
     font-weight: bold;
-    margin-right: -1px;
-    margin-top: -1px;
     padding: 0;
     text-align: center;
     width: 80px;
     line-height: 80px;
     height: 80px;
     display: inline-block;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      background-color: #0099FF;
-      margin: 10px;
-      border: 1px solid #2d6898;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #067c71;
    }
    
   .border-row{
@@ -31,25 +27,51 @@
     display: table;
    }
    /* Game */
-  .game {
-    background: black;
+.game {
+    background: #0cc2b0;
     justify-content: center;
     display:flex;
     color: white;
+    padding: 1rem;
 }
-   /* Game Info */
-  ul {
+/* Game Info */
+ul {
     padding-left: 30px;
-   }
-   .game-info {
+}
+.game-info {
     margin-left: 20px;
-   }
-   .status {
+    background: #0b8d80;
+    padding: 1rem;
+}
+.game-info ul li button {
+    background: transparent;
+    color: white;
+    box-shadow: none;
+    border: 1px solid white;
+}
+.status {
     margin-bottom: 10px;
-   }
+}
 
-   .board-row:after {
+.board-row:after {
     clear: both;
     content: "";
     display: table;
-   }
+}
+
+.border-row:first-child .Square {
+    border-top: none;
+}
+.border-row:last-child .Square{
+    border-bottom: none;
+}
+.border-row .Square:first-child {
+    border-left: none;
+}
+
+.border-row .Square:last-child {
+    border-right: none;
+}
+.content h2{
+    text-align: center;
+}

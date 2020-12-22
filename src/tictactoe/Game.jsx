@@ -90,7 +90,7 @@ export default class Game extends Component{
         return(
             <div>
                 <div>
-                  <h2>easy game</h2> 
+                  <h2>Easy game</h2> 
                 </div>
                 <div className="game">
                     <div className="game-board">
