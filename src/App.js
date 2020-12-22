@@ -6,6 +6,7 @@ import Contact from "./screens/Contact.jsx";
 
 
 function App() {
+
   return (
   <HashRouter>
       <div>
