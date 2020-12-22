@@ -3,7 +3,7 @@ import React, { Component } from "react";
 function Post (){
     return (
       <div>
-        <h2>yayy- u open post</h2>
+        <h2>yayy!!! u open post</h2>
         <p>
             congratulation!!
         </p>
