@@ -3,28 +3,28 @@ import Button from "../components/Button";
 import Post from "../screens/Post";
 
 function Home (){
-    
     const [showHidePost, setshowHidePost] = React.useState(false)
 
-    const onClick1 = () => setshowHidePost(true)
-    const onClick2 = () => setshowHidePost(false)
+    const onClick1 = () => setshowHidePost(!showHidePost)
+    const onClick2 = () => alert("good luck")
 
 
     return (
-    <div>
+    <div className="all">
         <div>
             <h2>SIMPLE SPA APP</h2>
             <p>hello all :) </p>
             <div className="container">
                 <div className="btns">
-                    <Button  label={'Click here to open'} handleClick={onClick1} />
+                    <Button  label={'Click here to open and close'} handleClick={onClick1} />
                 </div>
+
                 <div className="btns">
-                    <Button label={'Click here to close'} handleClick={onClick2} />
+                    <Button label={'just alert'} handleClick={onClick2} />
                 </div>
             </div>
         </div>
-        <div>
+        <div className="post">
             {showHidePost ? <Post/> : null }
         </div>
     </div>

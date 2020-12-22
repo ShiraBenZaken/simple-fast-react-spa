@@ -42,8 +42,10 @@ ul.header li a {
 }
 .btns{
   padding:1rem;
-  display: flex;
 }
 .container{
   display: flex;
+}
+.post{
+  padding: 2rem;
 }
