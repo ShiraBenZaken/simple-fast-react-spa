@@ -37,6 +37,10 @@ ul.header li a {
   margin-bottom: 10px;
 }
 .buttons{
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
   background-color: #0099FF;
   padding:1rem;
 }
@@ -48,4 +52,8 @@ ul.header li a {
 }
 .post{
   padding: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;  
 }
